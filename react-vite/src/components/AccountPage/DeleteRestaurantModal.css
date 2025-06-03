@@ -1,0 +1,68 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-container {
+    background-color: #111;
+    padding: 32px;
+    border-radius: 12px;
+    color: white;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.3);
+    border: 2px solid #00ff84;
+  }
+  
+  .modal-container h2 {
+    margin-bottom: 16px; 
+    font-size: 25.6px;   
+    font-weight: bold;
+  }
+  
+  .modal-container p {
+    margin-bottom: 26px;  
+    font-size: 30px;    
+    color: #ccc;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .modal-container button {
+    margin: 0 8px;        
+    padding: 12px 24px;   
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .modal-container button:hover {
+    background-color: #00ff84;
+    color: black;
+    border-color: #00ff84;
+  }
+
+  .delete-button:hover {
+    background-color: red !important;
+    color: white;
+    border-color: red !important;
+  }
