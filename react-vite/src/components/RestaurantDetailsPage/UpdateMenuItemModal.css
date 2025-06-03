@@ -1,0 +1,93 @@
+.update-menu-item-modal {
+    background-color: #111;
+    padding: 32px;
+    border-radius: 12px;
+    color: white;
+    max-width: 750px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
+    border: 2px solid #00ff84;
+  }
+  
+  .update-menu-item-modal h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .update-menu-item-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .update-menu-item-modal label {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .update-menu-item-modal input,
+  .update-menu-item-modal textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-size: 17px;
+    resize: vertical;
+  }
+  
+  .update-menu-item-modal input:focus,
+  .update-menu-item-modal textarea:focus {
+    outline: none;
+    border-color: #00ff84;
+  }
+  
+  .update-menu-item-modal .error-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 16px;
+    color: #ff4c4c;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .update-menu-item-modal button {
+    margin: 24px 8px 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .update-menu-item-modal button:hover {
+    background-color: #00ff84;
+    color: black;
+    border-color: #00ff84;
+  }
+  
+  /* Optional cancel button if you add one */
+  .update-menu-item-modal .cancel-button {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .update-menu-item-modal .cancel-button:hover {
+    background-color: #ff4c4c;
+    color: white;
+    border-color: #ff4c4c;
+  }

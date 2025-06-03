@@ -1,0 +1,111 @@
+.quick-add-cart-item-modal {
+    background-color: #111;
+    padding: 32px;
+    border-radius: 12px;
+    color: white;
+    max-width: 750px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
+    border: 2px solid #00ff84;
+  }
+  
+  .quick-add-cart-item-modal h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .quick-add-cart-item-modal .item-price {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #00ff84;
+  }
+  
+  .quick-add-cart-item-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quick-add-cart-item-modal .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .quick-add-cart-item-modal label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .quick-add-cart-item-modal input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-size: 17px;
+  }
+  
+  .quick-add-cart-item-modal input:focus {
+    outline: none;
+    border-color: #00ff84;
+  }
+  
+  .quick-add-cart-item-modal .error-messages {
+    width: 100%;
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .quick-add-cart-item-modal .success {
+    color: #00ff84;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 16px;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  .quick-add-cart-item-modal .modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .quick-add-cart-item-modal button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .quick-add-cart-item-modal button:hover {
+    background-color: #00ff84;
+    color: black;
+    border-color: #00ff84;
+  }
+  
+  .quick-add-cart-item-modal .cancel-button:hover {
+    background-color: #ff4c4c;
+    color: black;
+    border-color: #ff4c4c;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

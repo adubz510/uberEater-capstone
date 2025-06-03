@@ -1,0 +1,163 @@
+.homepage {
+    height: 100vh;
+    background: url('https://tableo.com/wp-content/uploads/Restaurant-Stock-Images-e1699951587809.webp') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    position: relative;
+  }
+  
+  .homepage-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px; 
+    align-items: center;
+  }
+
+  .browse-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid rgb(146, 255, 157); /* Neon green like .homepage-title */
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .browse-btn:hover {
+    background-color: #222;
+    transform: scale(1.03);
+  }
+  
+  .homepage-title {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid rgb(146, 255, 157);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .logo button {
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .auth-buttons button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #333;
+  }
+  
+  .header-buttons button {
+    margin-left: 16px;
+    padding: 8px 16px; 
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background-color: white;
+    color: black;
+  }
+  
+  .signup-btn {
+    background-color: black;
+    color: white;
+  }
+  
+  .homepage-main {
+    margin-top: 10vh;
+    padding: 0 32px; 
+  }
+  
+  .homepage-main h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 32px; 
+  }
+  
+  .search-bar {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .input-group {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: white;
+    padding: 12px 16px; 
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .input-group .icon {
+    margin-right: 8px;
+    color: gray;
+    flex-shrink: 0;
+  }
+  
+  .search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+  
+  .deliver-option {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .search-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid rgb(146, 255, 157);
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .signin-link {
+    display: block;
+    margin-top: 16px; 
+    color: black;
+    font-weight: bold;
+  }

@@ -1,0 +1,213 @@
+.restaurant-details {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+  line-height: 1.7;
+}
+
+.restaurant-details h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.restaurant-details p {
+  font-size: 18px;
+  color: #333;
+}
+
+.restaurant-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.restaurant-meta {
+  margin-bottom: 40px;
+  font-size: 17px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.restaurant-meta p {
+  margin: 6px 0;
+}
+
+
+.menu-item-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.menu-item-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.menu-section,
+.reviews-section {
+  margin-top: 48px;
+}
+
+.menu-section h2,
+.reviews-section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.create-menu-item-button,
+.create-review-button,
+.update-button,
+.delete-button,
+.menu-item-addCart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid rgb(146, 255, 157); /* green accent */
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-menu-item-button:hover,
+.menu-item-addCart:hover {
+  background-color: #222;
+  transform: scale(1.03);
+}
+
+.update-button {
+  background-color: #28a745;
+}
+
+.update-button:hover {
+  background-color: #1f7e35;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #a62834;
+}
+
+.menu-items-list,
+.review-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item,
+.review-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.menu-item {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.menu-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.menu-item-details {
+  flex: 1;
+}
+
+.menu-item-details strong {
+  font-size: 18px;
+}
+
+.menu-item-details p {
+  margin-top: 4px;
+}
+
+.menu-item-actions,
+.review-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid rgb(146, 255, 157); /* green accent */
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #222;
+  transform: scale(1.03);
+}
+
+
+/* Reviews */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.review-comment {
+  margin: 8px 0 16px;
+}
+
+.review-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.review-images img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+

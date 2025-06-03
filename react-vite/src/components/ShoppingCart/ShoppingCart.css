@@ -1,0 +1,98 @@
+.shopping-cart-page {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    font-family: 'Segoe UI', sans-serif;
+    color: #000;
+  }
+  
+  .shopping-cart-page h1 {
+    font-size: 36px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .cart {
+    margin-bottom: 48px;
+    padding: 24px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #eee;
+  }
+  
+  .cart h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid rgb(146, 255, 157); /* green accent */
+    padding-bottom: 8px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .cart-item span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cart-item span:first-child {
+    flex: 3;
+    text-align: left;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .cart-item button {
+    flex: 0 0 100px;
+    background-color: #dc3545; /* red */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item button:hover {
+    background-color: #a62834;
+  }
+  
+  .cart-total {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: right;
+    border-top: 2px solid rgb(146, 255, 157);
+    padding-top: 16px;
+    color: #333;
+  }
+
+  .menu-item-addCart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid rgb(146, 255, 157); /* green accent */
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .menu-item-addCart:hover {
+    background-color: #222;
+    transform: scale(1.03);
+  }

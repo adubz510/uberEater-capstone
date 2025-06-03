@@ -1,0 +1,79 @@
+.review-modal {
+    background-color: #111;
+    padding: 32px;
+    border-radius: 12px;
+    color: white;
+    max-width: 750px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
+    border: 2px solid #00ff84;
+  }
+  
+  .review-modal h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .review-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .review-modal label {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .review-modal select,
+  .review-modal textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-size: 17px;
+    resize: vertical;
+  }
+  
+  .review-modal select:focus,
+  .review-modal textarea:focus {
+    outline: none;
+    border-color: #00ff84;
+  }
+  
+  .review-modal .error-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 16px;
+    color: #ff4c4c;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .review-modal button {
+    margin: 24px 8px 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .review-modal button:hover {
+    background-color: #00ff84;
+    color: black;
+    border-color: #00ff84;
+  }

@@ -1,0 +1,103 @@
+.add-cart-item-modal {
+    background-color: #111;
+    padding: 32px;
+    border-radius: 12px;
+    color: white;
+    max-width: 600px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
+    border: 2px solid #00ff84;
+    margin: 0 auto;
+  }
+  
+  .add-cart-item-modal h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .add-cart-item-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-cart-item-modal label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: left;
+    margin-top: 16px;
+  }
+  
+  .add-cart-item-modal select,
+  .add-cart-item-modal input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-size: 17px;
+  }
+  
+  .add-cart-item-modal select:focus,
+  .add-cart-item-modal input[type="number"]:focus {
+    outline: none;
+    border-color: #00ff84;
+  }
+  
+  .add-cart-item-modal .error {
+    width: 100%;
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .add-cart-item-modal .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    width: 100%;
+  }
+  
+  .add-cart-item-modal button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    flex: 1;
+  }
+  
+  .add-cart-item-modal button:hover {
+    background-color: #00ff84;
+    color: black;
+    border-color: #00ff84;
+  }
+  .modal-cancel-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .modal-cancel-button:hover {
+    background-color: #ff4c4c !important;
+    color: black;
+    border-color: #ff4c4c !important;
+    font-weight: bold !important;
+  }

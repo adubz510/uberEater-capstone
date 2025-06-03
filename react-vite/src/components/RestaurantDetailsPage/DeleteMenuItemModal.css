@@ -1,0 +1,61 @@
+.delete-menu-item-modal {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 16px;
+    color: white;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.35);
+    border: 2px solid #00ff84;
+  }
+  
+  .delete-menu-item-modal h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .delete-menu-item-modal p {
+    font-size: 22px !important;
+    color: #ff0000;
+    margin-bottom: 32px;
+  }
+  
+  .delete-menu-item-modal .error-message {
+    color: #ff4c4c;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .delete-menu-item-modal .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .delete-menu-item-modal button {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    min-width: 120px;
+  }
+
+  .delete-menu-item-modal .cancel-button {
+  background-color: #222;
+  color: white;
+  border-color: white;
+}
+
+.delete-menu-item-modal .cancel-button:hover {
+  background-color: #1f7e35;
+  color: white;
+  border-color: #1f7e35;
+}
