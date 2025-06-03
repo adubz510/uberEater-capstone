@@ -1,131 +1,142 @@
-# Flask React Project
+# UBEREATS
 
-This is the starter for the Flask React project.
+## Live Site
+https://python-eatery-project.onrender.com
 
-## Getting started
+## Backend Repository
+[_This repository includes both frontend and backend code._](https://github.com/adubz510/uberEater-capstone.git)
 
-1. Clone this repository (only this branch).
+## 🗃 Database Schema
 
-2. Install dependencies.
+- User: id, username, email, hashed_password
+- Restaurant: id, owner_id, name, description, category, price_range, address, city, state, zip_code, lat, lng
+- Image: id, restaurant_id, user_id, url
+- MenuItem: id, restaurant_id, name, description, price, image_url
+- Review: id, restaurant_id, user_id, rating, comment, created_at, updated_at
 
-   ```bash
-   pipenv install -r requirements.txt
-   ```
+![Database Schema Diagram](https://res.cloudinary.com/drasm4tug/image/upload/v1747503624/Screenshot_2025-05-16_at_2.50.49_PM_t9oxpf.png)
 
-3. Create a __.env__ file based on the example with proper settings for your
-   development environment.
 
-4. Make sure the SQLite3 database connection URL is in the __.env__ file.
 
-5. This starter organizes all tables inside the `flask_schema` schema, defined
-   by the `SCHEMA` environment variable.  Replace the value for
-   `SCHEMA` with a unique name, **making sure you use the snake_case
-   convention.**
+## Summary
 
-6. Get into your pipenv, migrate your database, seed your database, and run your
-   Flask app:
+This is a full-stack clone of UberEats, a food delivery and restaurant ordering platform. The project allows users to browse restaurants, view detailed menus, add items to a shopping cart, and place orders. Core features include user authentication, restaurant and menu item CRUD functionality, real-time cart management, and a responsive search system. Users can also leave reviews for restaurants, view past orders, and quickly reorder from previous purchases. 
 
-   ```bash
-   pipenv shell
-   ```
+## 🖼 Screenshots
 
-   ```bash
-   flask db upgrade
-   ```
+| Feature | Screenshot |
+|--------|------------|
+| Signup Page | ![Signup Page](https://res.cloudinary.com/drasm4tug/image/upload/v1747591274/Screenshot_2025-05-16_at_2.52.57_PM_jd8cl2.png) |
+| Login Page | ![Login Page](https://res.cloudinary.com/drasm4tug/image/upload/v1747591283/Screenshot_2025-05-16_at_2.57.20_PM_pgaxb6.png) |
+| Logged Out Homepage | ![Logged Out Homepage](https://res.cloudinary.com/drasm4tug/image/upload/v1747591299/Screenshot_2025-05-16_at_2.51.29_PM_e0ooyp.png) |
+| Logged In Homepage | ![Logged In Homepage](https://res.cloudinary.com/drasm4tug/image/upload/v1747591292/Screenshot_2025-05-16_at_2.58.18_PM_xzhkcf.png) |
+| Browse Restaurant Page | ![Browse Restaurant Page](https://res.cloudinary.com/drasm4tug/image/upload/v1747591303/Screenshot_2025-05-16_at_2.58.29_PM_xypwox.png) |
+| Search Restaurant Page | ![Search Restaurant Page](https://res.cloudinary.com/drasm4tug/image/upload/v1747591312/Screenshot_2025-05-16_at_2.58.37_PM_o9vwaq.png) |
+| User Account Page | ![User Account Page](https://res.cloudinary.com/drasm4tug/image/upload/v1747591321/Screenshot_2025-05-16_at_2.58.45_PM_ujog2j.png) |
+| Restaurant Details Page | ![Restaurant Details Page](https://res.cloudinary.com/drasm4tug/image/upload/v1747591351/Screenshot_2025-05-16_at_2.59.10_PM_xux2j8.png) |
+| Restaurant Details Page cont'd | ![Restaurant Details Page cont'd](https://res.cloudinary.com/drasm4tug/image/upload/v1747591355/Screenshot_2025-05-16_at_2.59.16_PM_jyfv8e.png) |
 
-   ```bash
-   flask seed all
-   ```
+---
 
-   ```bash
-   flask run
-   ```
 
-7. The React frontend has no styling applied. Copy the __.css__ files from your
-   Authenticate Me project into the corresponding locations in the
-   __react-vite__ folder to give your project a unique look.
 
-8. To run the React frontend in development, `cd` into the __react-vite__
-   directory and run `npm i` to install dependencies. Next, run `npm run build`
-   to create the `dist` folder. The starter has modified the `npm run build`
-   command to include the `--watch` flag. This flag will rebuild the __dist__
-   folder whenever you change your code, keeping the production version up to
-   date.
+## 🔧 Features
+### User Authentication
+- Signup, login, and logout functionality
+- Demo user login for quick access
+- Protected routes based on user session
 
-## Deployment through Render.com
+### 🍽️ Restaurants
+- Full CRUD (Create, Read, Update, Delete) for restaurant listings
+- Each restaurant includes name, description, category, address, and price range
 
-First, recall that Vite is a development dependency, so it will not be used in
-production. This means that you must already have the __dist__ folder located in
-the root of your __react-vite__ folder when you push to GitHub. This __dist__
-folder contains your React code and all necessary dependencies minified and
-bundled into a smaller footprint, ready to be served from your Python API.
+### 📋 Menus
+- Restaurants have associated menu items
+- Full CRUD for menu items (e.g., dish name, description, price, image)
+- Menu items displayed on individual restaurant pages
 
-Begin deployment by running `npm run build` in your __react-vite__ folder and
-pushing any changes to GitHub.
+### ⭐ Reviews
+- Logged-in users can leave, edit, and delete reviews for restaurants
+- Reviews include star rating and written feedback
+- Average star ratings displayed per restaurant
 
-Refer to your Render.com deployment articles for more detailed instructions
-about getting started with [Render.com], creating a production database, and
-deployment debugging tips.
 
-From the Render [Dashboard], click on the "New +" button in the navigation bar,
-and click on "Web Service" to create the application that will be deployed.
+### 🔍 Search
+- Search bar with keyword matching for restaurant names and categories
+- Results displayed in a clean, responsive layout
 
-Select that you want to "Build and deploy from a Git repository" and click
-"Next". On the next page, find the name of the application repo you want to
-deploy and click the "Connect" button to the right of the name.
+### 📱 Modals
+- ustom modals for login, signup, and adding/editing content
+- Seamless user experience without full-page reloads
 
-Now you need to fill out the form to configure your app. Most of the setup will
-be handled by the __Dockerfile__, but you do need to fill in a few fields.
+### 🌐 Responsive Design
+- Styled with a modern, clean layout using CSS and component-based design
 
-Start by giving your application a name.
 
-Make sure the Region is set to the location closest to you, the Branch is set to
-"main", and Runtime is set to "Docker". You can leave the Root Directory field
-blank. (By default, Render will run commands from the root directory.)
+## 📂 API Routes
 
-Select "Free" as your Instance Type.
+### Auth
+- `GET /api/auth/` — restore session
+- `POST /api/auth/login` — login
+- `POST /api/auth/signup` — signup
+- `POST /api/auth/logout` — logout
 
-### Add environment variables
+### 👤 User Routes
+- `GET /api/users/` — get all users (login required)
+- `GET /api/users/<id>` — get a specific user by ID (login required)
 
-In the development environment, you have been securing your environment
-variables in a __.env__ file, which has been removed from source control (i.e.,
-the file is gitignored). In this step, you will need to input the keys and
-values for the environment variables you need for production into the Render
-GUI.
+### 🍽️ Restaurant Routes
+- `GET /api/restaurants/` — get all restaurants
+- `GET /api/restaurants/<restaurant_id> `— get a single restaurant by ID
+- `GET /api/restaurants/my-restaurants` — get all restaurants owned by the current user (login required)
+- `POST /api/restaurants/` — create a new restaurant (login required)
+- `PUT /api/restaurants/<restaurant_id>` — update an existing restaurant (login required & must be owner)
+- `DELETE /api/restaurants/<restaurant_id>` — delete a restaurant (login required & must be owner)
 
-Add the following keys and values in the Render GUI form:
+### 🍽️ Menu Item Routes
+- `GET /api/menu_items/restaurant/<restaurant_id>` — get all menu items for a specific restaurant
+- `POST /api/menu_items/restaurant/<restaurant_id>` — create a new menu item for a specific restaurant
+- `PATCH /api/menu_items/<menu_item_id>` — update a specific menu item
+- `DELETE /api/menu_items/<menu_item_id>` — delete a specific menu item
 
-- SECRET_KEY (click "Generate" to generate a secure secret for production)
-- FLASK_ENV production
-- FLASK_APP app
-- SCHEMA (your unique schema name, in snake_case)
+### 📝 Review Routes
+- `GET /api/reviews/restaurant/<restaurant_id>` — get all reviews for a restaurant
+- `POST /api/reviews/restaurant/<restaurant_id> `— create a new review for a restaurant (login required)
+- `PATCH /api/reviews/<review_id>` — update a review (login required & must be the review author)
+- `DELETE /api/reviews/<review_id>` — delete a review (login required & must be the review author)
 
-In a new tab, navigate to your dashboard and click on your Postgres database
-instance.
+### 🗃 Database Schema
+- User: id, username, email, hashed_password
+- Restaurant: id, owner_id, name, description, category, price_range, address, city, state, zip_code, lat, lng
+- Image: id, url, restaurant_id, user_id
+- MenuItem: id, restaurant_id, name, description, price, image_url
+- Review: id, restaurant_id, user_id, rating, comment, created_at, updated_at
 
-Add the following keys and values:
 
-- DATABASE_URL (copy value from the **External Database URL** field)
 
-**Note:** Add any other keys and values that may be present in your local
-__.env__ file. As you work to further develop your project, you may need to add
-more environment variables to your local __.env__ file. Make sure you add these
-environment variables to the Render GUI as well for the next deployment.
 
-### Deploy
 
-Now you are finally ready to deploy! Click "Create Web Service" to deploy your
-project. The deployment process will likely take about 10-15 minutes if
-everything works as expected. You can monitor the logs to see your Dockerfile
-commands being executed and any errors that occur.
+## 🛠 Installation & Setup
 
-When deployment is complete, open your deployed site and check to see that you
-have successfully deployed your Flask application to Render! You can find the
-URL for your site just below the name of the Web Service at the top of the page.
+1. Clone the repository:
+```bash
+git clone <repo-url>
+cd capstone-yelpproj
+```
 
-**Note:** By default, Render will set Auto-Deploy for your project to true. This
-setting will cause Render to re-deploy your application every time you push to
-main, always keeping it up to date.
+2. Backend setup:
+```bash
+pipenv install
+pipenv shell
+flask db upgrade
+flask seed all
+flask run
+```
 
-[Render.com]: https://render.com/
-[Dashboard]: https://dashboard.render.com/
+3. Frontend setup:
+```bash
+cd react-vite
+npm install
+npm run build
+```
+
