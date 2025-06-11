@@ -4,7 +4,8 @@ from .restaurants import seed_restaurants, undo_restaurants
 from .images import seed_images, undo_images
 from .reviews import seed_reviews, undo_reviews
 from .menuItems import seed_menu_items, undo_menu_items
-from .cart_seeder import seed_carts_and_cart_items, undo_carts_and_cart_items
+from .cart import seed_carts, undo_carts
+from .cartItems import seed_cart_items, undo_cart_items
 
 
 from app.models.db import db, environment, SCHEMA
@@ -22,7 +23,8 @@ def seed():
         # command, which will  truncate all tables prefixed with 
         # the schema name (see comment in users.py undo_users function).
         # Make sure to add all your other model's undo functions below
-        undo_carts_and_cart_items()
+        undo_cart_items()
+        undo_carts()
         undo_menu_items()
         undo_reviews()
         undo_images()
@@ -33,14 +35,16 @@ def seed():
     seed_images()
     seed_reviews()
     seed_menu_items()
-    seed_carts_and_cart_items()
+    seed_carts()
+    seed_cart_items()
     # Add other seed functions here
 
 
 # Creates the `flask seed undo` command
 @seed_commands.command('undo')
 def undo():
-    undo_carts_and_cart_items()
+    undo_cart_items()
+    undo_carts()
     undo_menu_items()
     undo_reviews()
     undo_images()

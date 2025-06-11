@@ -59,9 +59,7 @@ const activeCart = Object.values(carts).find(cart => cart.restaurantId === Numbe
 const hasItemsInOtherRestaurantCart = Object.values(carts).some(cart =>
   cart.restaurantId !== Number(restaurantId) && cart.cartItems.length > 0
 );
-const cartItemIds = activeCart?.cartItems || [];
-const cartIsEmpty = cartItemIds.length === 0;
-const canAddToCart = !hasItemsInOtherRestaurantCart && (!activeCart || cartIsEmpty);
+const canAddToCart = !hasItemsInOtherRestaurantCart;
 
   // Handle Create Review
   const handleCreateReview = () => {
