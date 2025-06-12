@@ -36,7 +36,7 @@ def seed():
     seed_reviews()
     seed_menu_items()
     seed_carts()
-    seed_cart_items()
+    # seed_cart_items()
     # Add other seed functions here
 
 
